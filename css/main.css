@@ -41,3 +41,27 @@ body {
         text-transform: uppercase;
     }
 }
+
+.ball    {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: white;
+    animation-name: jump;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    top: 0px;
+}
+
+@keyframes jump{
+    from{
+        margin-top: 0px;
+    }
+    
+    to{
+        margin-top: 100px;
+    }
+}
