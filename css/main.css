@@ -1,0 +1,43 @@
+body {
+    background-color: grey;
+}
+
+.box    {
+    width: 150px;
+    height: 0px;
+    background-color: black;
+    margin: 25px;
+    animation-name: growing;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+@keyframes growing{
+    
+    from {
+        height: 0px;
+        background-color: black;
+        width: 150px;
+        color: white;
+        font-family: fantasy;
+        font-size: small;
+        font-weight: lighter;
+        text-transform: lowercase;
+    }
+    
+    to {
+        height: 150px;
+        background-color: lightgrey;
+        width: 300px;
+        color: black;
+        font-family: serif;
+        font-size: larger;
+        font-weight: bolder;
+        text-transform: uppercase;
+    }
+}
